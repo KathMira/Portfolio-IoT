@@ -17,12 +17,17 @@ eggs/
 lib/
 lib64/
 parts/
+share/
+include/
+etc/
 sdist/
+Scripts/
 var/
 wheels/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
+pyvenv.cfg
 *.egg
 MANIFEST
 
