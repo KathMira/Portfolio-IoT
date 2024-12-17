@@ -17,17 +17,12 @@ eggs/
 lib/
 lib64/
 parts/
-share/
-include/
-etc/
 sdist/
-Scripts/
 var/
 wheels/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
-pyvenv.cfg
 *.egg
 MANIFEST
 
@@ -98,6 +93,12 @@ ipython_config.py
 #   having no cross-platform support, pipenv may install dependencies that don't work, or not
 #   install all needed dependencies.
 #Pipfile.lock
+
+# UV
+#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#uv.lock
 
 # poetry
 #   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
