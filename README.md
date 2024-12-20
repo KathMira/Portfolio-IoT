@@ -13,6 +13,7 @@ O projeto foi realizado usando as seguintes ferramentas:
 - ### Docker
 - ### Postgres
 - ### Dbeaver
+- ### WSL (Subsistema Linux para Windows)
 
 <br>
 
@@ -107,12 +108,14 @@ data.to_sql('temperaturas', engine, if_exists='append', index=False)
 ```
 
 ## Execução
-
-<!-- COMO TU EXECUTOU OS BAGUI -->
-Após criar o container seguindo as instruções do pdf da matéria de IoT, ele já está funcionando.
+Após verificar se todos as bibliotecas estão devidamente instaladas, que o projeto não está apresentando nenhum erro e que o docker foi iniciado corretamente com o postgres, ao entrarmos no Docker Desktop, o container continua armazenado:
+<br>
+O Container também pode ser iniciado ao clicar no botão de start, que se encontra na mesma linha das informações do container.
 ![alt text](image.png)
 Utilizando o seguinte comando:
+<br>
 ![alt text](image-1.png)
+<br>
 Ele abre automaticamente o navegador com o dashboard configurado.
 
 ### Dashboard
@@ -182,9 +185,7 @@ order by to_char(noted_date, 'MM-YYYY'), extract (hour from noted_date);
 
 ## Insights obtidos
 Podemos analisar que na View 1, a partir da metade do mês de Setembro, houve uma alta de temperatura considerável no lado externo da sala enquanto dentro, mantinha a mesma média de temperatura.
-
 <br>
 Já na View 2, podemos ver a média de temperatura da parte externa da sala por dia, comparando com os demais dias do mês, onde tiramos a conclusão de que o mês de Outubro fi um dos mais quentes.
-
 <br>
 E na View 3, podemos ver a média de temperatura da parte externa da sala por dia, comparando com os demais dias do mês.
